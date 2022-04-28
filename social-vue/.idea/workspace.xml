@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ee037add-eeb3-489c-9486-acfcb0ce4049" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="exam-vue" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="27BfUUjVYlTeY4eF1DLgObj8zcQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/views/auth" />
+      <recent name="$PROJECT_DIR$/src/views" />
+      <recent name="$PROJECT_DIR$/src/views/admin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/imgs" />
+      <recent name="$PROJECT_DIR$/src/assets/css/chat" />
+      <recent name="$PROJECT_DIR$/src/utils" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.serve">
+    <configuration name="localhost:9999" type="JavascriptDebugType" uri="http://localhost:9999">
+      <method v="2" />
+    </configuration>
+    <configuration name="serve" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.localhost:9999" />
+      <item itemvalue="npm.serve" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee037add-eeb3-489c-9486-acfcb0ce4049" name="Default Changelist" comment="" />
+      <created>1648798416056</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648798416056</updated>
+      <workItem from="1648798418598" duration="18566000" />
+      <workItem from="1648860039685" duration="8259000" />
+      <workItem from="1648915230402" duration="3124000" />
+      <workItem from="1648978452276" duration="4685000" />
+      <workItem from="1649030315782" duration="609000" />
+      <workItem from="1649031201992" duration="33615000" />
+      <workItem from="1649119955810" duration="22068000" />
+      <workItem from="1649223167083" duration="9536000" />
+      <workItem from="1649305853065" duration="8151000" />
+      <workItem from="1649336889903" duration="2212000" />
+      <workItem from="1649367872249" duration="3359000" />
+      <workItem from="1649379933249" duration="13684000" />
+      <workItem from="1649404029868" duration="38187000" />
+      <workItem from="1649499511721" duration="940000" />
+      <workItem from="1649502124551" duration="1747000" />
+      <workItem from="1649546656317" duration="14356000" />
+      <workItem from="1649588776865" duration="38394000" />
+      <workItem from="1649724645518" duration="6479000" />
+      <workItem from="1649759284603" duration="7011000" />
+      <workItem from="1649810072468" duration="71964000" />
+      <workItem from="1649982037618" duration="36245000" />
+      <workItem from="1650070024829" duration="7664000" />
+      <workItem from="1650080711106" duration="4038000" />
+      <workItem from="1650088136740" duration="21212000" />
+      <workItem from="1650157466176" duration="6000" />
+      <workItem from="1650157506411" duration="21426000" />
+      <workItem from="1650244997293" duration="2686000" />
+      <workItem from="1650268538175" duration="16252000" />
+      <workItem from="1650297508963" duration="449000" />
+      <workItem from="1650327869558" duration="13765000" />
+      <workItem from="1650353469021" duration="3465000" />
+      <workItem from="1650512805996" duration="7058000" />
+      <workItem from="1650589778118" duration="26349000" />
+      <workItem from="1650707959016" duration="1292000" />
+      <workItem from="1650789879800" duration="825000" />
+      <workItem from="1651074773217" duration="1430000" />
+      <workItem from="1651107547800" duration="599000" />
+      <workItem from="1651108841874" duration="621000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/user/MesBoard.vue</url>
+          <line>56</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/user/MesBoard.vue</url>
+          <line>57</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/user/MesBoard.vue</url>
+          <line>51</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/user/Information.vue</url>
+          <line>165</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/user/Information.vue</url>
+          <line>142</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/chat/list.vue</url>
+          <line>2</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/user/FriendDetail.vue</url>
+          <line>95</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/user/FriendDetail.vue</url>
+          <line>99</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/admin/UpdateQuestion.vue</url>
+          <line>174</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/user/Question.vue</url>
+          <line>207</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/admin/ChatLog.vue</url>
+          <line>63</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/admin/ChatLog.vue</url>
+          <line>9</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/admin/GraphAnalysis.vue</url>
+          <line>137</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/admin/GraphAnalysis.vue</url>
+          <line>143</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/admin/GraphAnalysis.vue</url>
+          <line>93</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/admin/GraphAnalysis.vue</url>
+          <line>98</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/exam_vue$localhost_9999.dat" NAME="localhost:9999 Coverage Results" MODIFIED="1650089797183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

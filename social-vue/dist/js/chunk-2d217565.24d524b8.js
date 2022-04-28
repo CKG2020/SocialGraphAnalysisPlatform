@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d217565"],{c5fc:function(e,n,c){"use strict";c.r(n);var t=function(){var e=this,n=e.$createElement,c=e._self._c||n;return c("div",[e._v(" 好友申请 ")])},a=[],r={name:"MesBoard"},s=r,u=c("2877"),o=Object(u["a"])(s,t,a,!1,null,"1f7e61be",null);n["default"]=o.exports}}]);
+//# sourceMappingURL=chunk-2d217565.24d524b8.js.map
