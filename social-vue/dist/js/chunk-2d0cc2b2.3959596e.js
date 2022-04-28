@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0cc2b2"],{"4d7c":function(e,n,c){"use strict";c.r(n);var t=function(){var e=this,n=e.$createElement,c=e._self._c||n;return c("div",[e._v(" 更新题库 ")])},a=[],r={name:"MesBoard"},s=r,u=c("2877"),o=Object(u["a"])(s,t,a,!1,null,"0024f9e2",null);n["default"]=o.exports}}]);
+//# sourceMappingURL=chunk-2d0cc2b2.3959596e.js.map
