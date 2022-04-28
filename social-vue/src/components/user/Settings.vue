@@ -47,6 +47,8 @@
                 formData: {
                     receive_friend: true,
                     show_board: true,
+
+
                     receive_board:false,
                     send_notice:false
                 },
@@ -56,6 +58,21 @@
         computed: {},
         watch: {},
         created() {
+         exam.searchSettings().then((resp) => {
+             if (resp.data.code === 666) {
+              this.formData.receive_friend=resp.data.obj.receive_friend
+                 this.formData.show_board=resp.data.obj.show_board
+                 console.log(resp.data.obj.receive_friend)
+                 console.log(resp.data.obj.show_board)
+             } else {
+                 this.$notify({
+                     title: 'Tips',
+                     message: resp.data.message,
+                     type: 'error',
+                     duration: 2000
+                 })
+             }
+         })
 
         },
         mounted() {},

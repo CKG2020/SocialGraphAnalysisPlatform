@@ -40,9 +40,6 @@
                 </template>
               </el-table-column>
             </el-table>
-
-
-
             <el-pagination style="margin-top: 25px"
                            @size-change="handleSizeChange"
                            @current-change="handleCurrentChange"
@@ -52,16 +49,12 @@
                            layout="total, sizes, prev, pager, next, jumper"
                            :total="total">
             </el-pagination>
-
-
-
             <el-dialog title="添加题目" :visible.sync="addTableVisible" width="50%"
                        center>
               <el-container>
                 <el-main>
                   <div>
                     <el-form ref="elForm" :model="formData1"  size="medium" label-width="100px">
-
                       <el-form-item label="问题" prop="user_account">
                         <el-input v-model="formData1.title" placeholder="请输入问题" clearable :style="{width: '100%'}">
                         </el-input>
@@ -78,8 +71,6 @@
                           </el-option>
                         </el-select>
                       </el-form-item>
-
-
                       <el-form-item label="答案2" prop="email">
                         <el-input v-model="formData1.answer2" placeholder="请输入答案2" clearable :style="{width: '100%'}">
                         </el-input>
@@ -116,10 +107,6 @@
                 </el-main>
               </el-container>
             </el-dialog>
-
-
-
-
           </el-main>
         </el-container>
       </el-card>

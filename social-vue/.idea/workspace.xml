@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee037add-eeb3-489c-9486-acfcb0ce4049" name="Default Changelist" comment="" />
+    <list default="true" id="ee037add-eeb3-489c-9486-acfcb0ce4049" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/exam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/exam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admin/AddQuestionnaire.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admin/AddQuestionnaire.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admin/UpdateQuestion.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admin/UpdateQuestion.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/user/Settings.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/Settings.vue" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,10 +28,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="27BfUUjVYlTeY4eF1DLgObj8zcQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -123,11 +135,26 @@
       <workItem from="1651074773217" duration="1430000" />
       <workItem from="1651107547800" duration="599000" />
       <workItem from="1651108841874" duration="621000" />
+      <workItem from="1651113863959" duration="3915000" />
+      <workItem from="1651128904442" duration="11820000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -174,7 +201,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/admin/UpdateQuestion.vue</url>
-          <line>174</line>
+          <line>161</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

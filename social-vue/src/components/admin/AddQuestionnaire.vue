@@ -47,45 +47,59 @@
                 </template>
               </el-table-column>
             </el-table>
-
-
           </el-main>
         </el-container>
-
-
-        <el-dialog title="添加题目" :visible.sync="addTableVisible" width="50%"
+        <el-dialog title="添加问卷" :visible.sync="addTableVisible" width="50%"
                    center>
           <el-container>
             <el-main>
               <div>
-                <el-form ref="elForm" :model="formData1"  size="medium" label-width="100px">
-
-                  <el-form-item label="问题" prop="user_account">
-                    <el-input v-model="formData1.title" placeholder="请输入问题" clearable :style="{width: '100%'}">
-                    </el-input>
-                  </el-form-item>
-
-
-                  <el-form-item label="答案1" prop="user_pwd">
-                    <el-input v-model="formData1.answer1" placeholder="请输入答案1" clearable :style="{width: '100%'}">
-                    </el-input>
-                  </el-form-item>
-
-
-
-                  <el-form-item label="答案2" prop="email">
-                    <el-input v-model="formData1.answer2" placeholder="请输入答案2" clearable :style="{width: '100%'}">
-                    </el-input>
-                  </el-form-item>
-
-
-
-                  <el-form-item label="答案3" prop="phone">
-                    <el-input v-model="formData1.answer3" placeholder="请输入答案3" clearable :style="{width: '100%'}">
-                    </el-input>
-                  </el-form-item>
-                </el-form>
-
+                <div>已经选择的题目数量：<span>{{this.ids.length}}</span></div>
+                <el-table
+                  ref="multipleTable"
+                  highlight-current-row
+                  v-loading="loading"
+                  :border="true"
+                  :data="questionInfo"
+                  tooltip-effect="dark"
+                  style="width: 100%"
+                  @selection-change="handleSelectionChange">
+                  <el-table-column type="selection" width="55" align="center" />
+                  <el-table-column align="center" label="题号">
+                    <template slot-scope="scope">
+                      {{ scope.row.id }}
+                    </template>
+                  </el-table-column>
+                  <el-table-column align="center" label="问题">
+                    <template slot-scope="scope">
+                      {{ scope.row.title }}
+                    </template>
+                  </el-table-column>
+                  <el-table-column align="center" label="答案1">
+                    <template slot-scope="scope">
+                      {{ scope.row.answer1 }}
+                    </template>
+                  </el-table-column>
+                  <el-table-column align="center" label="答案2">
+                    <template slot-scope="scope">
+                      {{ scope.row.answer2 }}
+                    </template>
+                  </el-table-column>
+                  <el-table-column align="center" label="答案3">
+                    <template slot-scope="scope">
+                      {{ scope.row.answer3 }}
+                    </template>
+                  </el-table-column>
+                </el-table>
+                <el-pagination style="margin-top: 25px"
+                               @size-change="handleSizeChange"
+                               @current-change="handleCurrentChange"
+                               :current-page="queryInfo.index"
+                               :page-sizes="[10, 20, 30, 50]"
+                               :page-size="queryInfo.perPage"
+                               layout="total, sizes, prev, pager, next, jumper"
+                               :total="total">
+                </el-pagination>
                 <div slot="footer">
                   <el-button type="primary" @click="handleConfirm">确定</el-button>
                 </div>
@@ -93,13 +107,30 @@
             </el-main>
           </el-container>
         </el-dialog>
+
+
+
+        <el-dialog  :visible.sync="tableVisible" width="50%"
+                   center>
+              <div>
+                <el-form ref="elForm" :model="questionnaireTitle"  size="medium" label-width="100px">
+                  <el-form-item label="问卷的名称:" prop="user_account">
+                    <el-input v-model="questionnaireTitle" placeholder="请输入问卷名称" clearable :style="{width: '50%'}">
+                    </el-input>
+                  </el-form-item>
+                </el-form>
+                <div slot="footer">
+                  <el-button type="primary" @click="myhandleConfirm">确定</el-button>
+                </div>
+              </div>
+        </el-dialog>
+
+
+
       </el-card>
     </el-col>
   </el-row>
 </template>
-
-
-
 
 
 <script>
@@ -107,42 +138,43 @@
     const   firstInfo = {
        qId:0
     };
+    const   myfirstInfo = {
+        'index': 1,
+        'perPage': 10
+    };
+
+     const  questionPage={
+         questionList:'',
+         pageName:'',
+         available:true
+     };
+
     export default {
         name: "AddQuestionnaire",
         data() {
             return {
+                questionnaireTitle:'',
                  options: [],
                  myvalue:'',
-                formData1: {
-                    title: undefined,
-                    answer1: undefined,
-                    answer2: undefined,
-                    answer3: undefined,
-                },
-                Question: {
-                    title: undefined,
-                    answer1: undefined,
-                    answer2: undefined,
-                    answer3: undefined,
-                },
                 questionInfo: [],
                 queryInfo: {
                     'index': 1,
-                    'perPage': 10
+                    'perPage': 50
                 },
                 addTableVisible:false,
+                tableVisible:false,
                 total:'',
                 loading: true,
-
                 value1: '',
                 value2: '',
                 value3: '',
+                ids:[]
             }
         },
         created() {
             this.getAllQuestionnaire()
+            this.getAllQuestions()
         },
-
         methods: {
             getAllQuestionnaire() {
                 exam.getAvailableQuestions().then((resp) => {
@@ -161,10 +193,8 @@
             showQuestions(){
                 console.log(this.myvalue)
                 firstInfo.qId=this.myvalue
-
-              exam.getQuestionsDetail(firstInfo).then((resp) => {
+               exam.getQuestionsDetail(firstInfo).then((resp) => {
                if (resp.data.code === 666) {
-                   console.log("=================================")
                    this.questionInfo =resp.data.obj
                    this.loading = false
                } else {
@@ -175,16 +205,13 @@
                    });
                }
            })
-
-
-
             },
 
-
-
             //表格某一行被选中
-            handleSelectionChange (val) {
-                this.selectedInTable = val
+            handleSelectionChange(selection) {
+                this.ids = selection.map(item => item.id)
+                // this.single = selection.length!=1
+                // this.multiple = !selection.length
             },
             //分页插件的大小改变
             handleSizeChange (val) {
@@ -202,42 +229,59 @@
             },
             handleConfirm(){
 
-                var  myquestion=this.formData1.title
-                this.Question.title=myquestion
-                var myanswer1=this.formData1.answer1
-                var myvalue1=this.value1
-                this.Question.answer1=myanswer1+"//"+myvalue1
+                this.tableVisible = true
 
-                var myanswer2=this.formData1.answer2
-                var myvalue2=this.value2
-                this.Question.answer2=myanswer2+"//"+myvalue2
+          },
+            myhandleConfirm(){
+                questionPage.pageName =this.questionnaireTitle
 
-                var myanswer3=this.formData1.answer3
-                var myvalue3=this.value3
-                this.Question.answer3=myanswer3+"//"+myvalue3
+                questionPage.questionList="["+this.ids.toString()+"]"
 
-                exam.addMyQuestion(this.Question).then((resp) => {
+            exam.addQuestionPage(questionPage).then((resp) => {
+                if (resp.data.code === 666) {
+                    this.$message({
+                        type: 'success',
+                        message: resp.data.message,
+                        duration: 1000
+                    });
+
+        } else {
+            this.$message({
+                type: 'error',
+                message: resp.data.message,
+                duration: 1000
+            });
+        }
+    })
+
+
+
+
+            },
+            getAllQuestions() {
+                myfirstInfo.index=this.queryInfo.index
+                myfirstInfo.perPage=this.queryInfo.perPage
+                exam.getAllQuestions(myfirstInfo).then((resp) => {
                     console.log(resp.data.code)
                     if (resp.data.code === 666) {
-                        this.$message({
-                            type: 'success',
-                            message: resp.data.message,
-                            duration: 2000
-                        });
+                        this.questionInfo =resp.data.obj
+                        this.total = resp.data.totalSize
+                        this.loading = false
                     } else {
                         this.$message({
                             type: 'error',
-                            message: '添加题目失败!',
-                            duration: 2000
+                            message: '获取题目失败!',
+                            duration: 1000
                         });
                     }
                 })
-
-                console.log("================="+this.formData2.answer1)
             },
 
 
-        }
+
+        },
+
+
     }
 </script>
 
