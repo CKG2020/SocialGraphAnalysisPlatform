@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0e146c"],{"7a6b":function(e,n,c){"use strict";c.r(n);var t=function(){var e=this,n=e.$createElement,c=e._self._c||n;return c("div",[e._v(" 监控聊天 ")])},a=[],r={name:"MesBoard"},s=r,u=c("2877"),o=Object(u["a"])(s,t,a,!1,null,"5bbdcb35",null);n["default"]=o.exports}}]);
-//# sourceMappingURL=chunk-2d0e146c.18e752e8.js.map

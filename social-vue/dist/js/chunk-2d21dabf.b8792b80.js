@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d21dabf"],{d1fb:function(e,n,a){"use strict";a.r(n);var t=function(){var e=this,n=e.$createElement,a=e._self._c||n;return a("div",[e._v(" 聊天室 ")])},c=[],r={name:"MesBoard"},s=r,u=a("2877"),d=Object(u["a"])(s,t,c,!1,null,"a3f76560",null);n["default"]=d.exports}}]);
-//# sourceMappingURL=chunk-2d21dabf.b8792b80.js.map

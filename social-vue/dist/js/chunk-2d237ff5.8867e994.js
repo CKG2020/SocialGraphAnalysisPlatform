@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d237ff5"],{fe00:function(e,n,a){"use strict";a.r(n);var t=function(){var e=this,n=e.$createElement,a=e._self._c||n;return a("div",[e._v(" 用户基础信息 ")])},c=[],r={name:"MesBoard"},s=r,u=a("2877"),o=Object(u["a"])(s,t,c,!1,null,"766341aa",null);n["default"]=o.exports}}]);
-//# sourceMappingURL=chunk-2d237ff5.8867e994.js.map

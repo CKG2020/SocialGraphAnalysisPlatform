@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d21e17a"],{d3a6:function(e,n,a){"use strict";a.r(n);var t=function(){var e=this,n=e.$createElement,a=e._self._c||n;return a("div",[e._v(" 不知道 ")])},c=[],r={name:"MesBoard"},s=r,u=a("2877"),o=Object(u["a"])(s,t,c,!1,null,"425af46c",null);n["default"]=o.exports}}]);
-//# sourceMappingURL=chunk-2d21e17a.5875e40e.js.map
